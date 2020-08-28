@@ -11,6 +11,7 @@ header {
   align-items: center;
   padding: 0 30px;
   background: transparent;
+  transition: 0.4s;
 }
 
 header.black {
