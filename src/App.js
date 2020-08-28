@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Tmdb from './tmdb';
 import MovieRow from './components/MovieRow';
 import FeatureMovie from './components/FeatureMovie';
+import Header from './components/Header';
 import './App.css'
 
 export default () => {
@@ -29,6 +30,9 @@ export default () => {
 
   return (
     <div className="page">
+
+      <Header />
+
       {featureData && <FeatureMovie item={featureData} />}
 
       <section className="lists">
